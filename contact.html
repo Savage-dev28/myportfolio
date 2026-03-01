@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Jobi E. Funsho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#000;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto;margin:0;background:#fff;color:#000}
+    .container{max-width:960px;margin:3rem auto;padding:2rem}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem}
+    header h1{font-size:1.6rem}
+    .back{background:#000;color:#fff;padding:.5rem 1rem;border-radius:6px;text-decoration:none}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+    .card{background:#f8f8f8;padding:1.5rem;border-radius:10px}
+    .card h2{margin:0 0 .5rem}
+    .contact-list a{display:block;color:var(--black);text-decoration:none;margin:.4rem 0}
+    .contact-form{background:#fff;padding:1.5rem;border-radius:10px;border:1px solid #eee}
+    .form-row{display:flex;gap:1rem;margin-bottom:1rem}
+    .form-row input,.form-row textarea{width:100%;padding:.75rem;border-radius:8px;border:1px solid #ddd;font-size:1rem}
+    textarea{min-height:140px;resize:vertical}
+    .btn{background:#000;color:#fff;padding:.7rem 1.2rem;border-radius:8px;border:0;cursor:pointer}
+    @media (max-width:760px){.contact-grid{grid-template-columns:1fr}.form-row{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Contact</h1>
+      <a class="back" href="index.html">Back to Home</a>
+    </header>
+
+    <div class="contact-grid">
+      <div>
+        <div class="card">
+          <h2>Get in touch</h2>
+          <p class="contact-list">
+            <strong>Email:</strong> <a href="mailto:Jobiayomide8@gmail.com">Jobiayomide8@gmail.com</a>
+            <strong>Phone:</strong> <a href="tel:+00000000000">+00 000 000 000</a>
+            <strong>Instagram:</strong> <a href="https://instagram.com" target="_blank" rel="noopener">@yourhandle</a>
+            <strong>YouTube:</strong> <a href="https://youtube.com" target="_blank" rel="noopener">Channel</a>
+          </p>
+        </div>
+
+        <div style="height:1rem"></div>
+
+        <div class="card">
+          <h2>Availability</h2>
+          <p>I am available for freelance, collaborations, and brand projects. Typical response time: 24–48 hours.</p>
+          <p><strong>Location:</strong> Your City, Country</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="contact-form">
+          <h2>Send a message</h2>
+          <form id="contactForm" action="#" onsubmit="event.preventDefault(); alert('This is a demo form — it does not send. Use the email link to contact.');">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your name" required>
+              <input type="email" name="email" placeholder="Your email" required>
+            </div>
+            <div style="margin-bottom:1rem">
+              <input type="text" name="subject" placeholder="Subject" required style="width:100%;padding:.75rem;border-radius:8px;border:1px solid #ddd">
+            </div>
+            <div style="margin-bottom:1rem">
+              <textarea name="message" placeholder="How can I help?" required></textarea>
+            </div>
+            <div style="display:flex;gap:1rem;align-items:center">
+              <button class="btn" type="submit">Send Message</button>
+              <a href="mailto:Jobiayomide8@gmail.com" class="btn" style="background:#fff;color:#000;border:1px solid #000;text-decoration:none;padding:.6rem 1rem">Email Me</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
